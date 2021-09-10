@@ -1,0 +1,10 @@
+.places {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  max-width: 984px;
+  min-height: 3392px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
