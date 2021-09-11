@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header page__header">
       <img src="./images/header-logo.svg" alt="" class="header__logo" />
       <div class="header__item">
         <ul class="header__links">
@@ -31,7 +31,7 @@
     </header>
 
     <main>
-      <section class="lead">
+      <section class="lead page__lead">
         <h1 class="lead__title">Путешествия по России</h1>
         <p class="lead__subtitle">
           Настоящая страна не в выпусках новостей, а здесь.
@@ -44,7 +44,7 @@
         <p class="lead__caption">ваша полка — верхняя</p>
       </section>
 
-      <section class="intro">
+      <section class="intro page__intro">
         <h2 class="intro__title">Чего мы там не видели?</h2>
         <p class="intro__text">
           По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только
@@ -67,7 +67,7 @@
         </ul>
       </section>
 
-      <ul class="photo-grid">
+      <ul class="photo-grid page__photo-grid">
         <li>
           <img
             src="./images/photo-grid-train.jpg"
@@ -154,12 +154,14 @@
         </li>
       </ul>
 
-      <ul class="places">
+      <ul class="places page__places">
         <li class="place">
           <h2 class="place__tite">Куршская коса</h2>
           <div class="place__web-site">
             <p class="place__url-heading">url</p>
-            <a href="#" class="place__link">park-kosa.ru</a>
+            <a href="http://park-kosa.ru" class="place__link" target="_blank"
+              >park-kosa.ru</a
+            >
           </div>
 
           <img src="./images/place-kosa.jpg" alt="kosa" class="place__img" />
@@ -185,7 +187,12 @@
           <h2 class="place__tite">Кольский</h2>
           <div class="place__web-site">
             <p class="place__url-heading">url</p>
-            <a href="#" class="place__link">National Geographic</a>
+            <a
+              href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
+              class="place__link"
+              target="_blank"
+              >National Geographic</a
+            >
           </div>
 
           <img
@@ -215,7 +222,12 @@
           <h2 class="place__tite">Алтай</h2>
           <div class="place__web-site">
             <p class="place__url-heading">url</p>
-            <a href="#" class="place__link">Facebook</a>
+            <a
+              href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
+              class="place__link"
+              target="_blank"
+              >Facebook</a
+            >
           </div>
 
           <img src="./images/place-altai.jpg" alt="altai" class="place__img" />
@@ -240,7 +252,12 @@
           <h2 class="place__tite">Зимний Байкал</h2>
           <div class="place__web-site">
             <p class="place__url-heading">url</p>
-            <a href="#" class="place__link">https://vk.com/baikalmile</a>
+            <a
+              href="https://vk.com/baikalmile"
+              class="place__link"
+              target="_blank"
+              >https://vk.com/baikalmile</a
+            >
           </div>
 
           <img
@@ -268,7 +285,9 @@
           <h2 class="place__tite">Карелия</h2>
           <div class="place__web-site">
             <p class="place__url-heading">url</p>
-            <a href="#" class="place__link">http://vodlozero.ru/</a>
+            <a href="http://vodlozero.ru" class="place__link" target="_blank"
+              >http://vodlozero.ru/</a
+            >
           </div>
 
           <img
@@ -291,6 +310,70 @@
           </div>
         </li>
       </ul>
+
+      <section class="cover page__cover">
+        <div class="cover__overlay">
+          <a
+            href="https://stampsy.com/na-elektrichkakh-do-baikala"
+            class="cover__link"
+            target="_blank"
+          >
+            <h2 class="cover__title">До Байкала «на собаках»</h2>
+            <p class="cover__subtitle">
+              По мотивам учебной темы о Транссибе — путешествие от столицы до
+              Байкала на электричках.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer page__footer">
+        <nav>
+          <ul class="footer__links">
+            <li>
+              <a
+                href="https://yandex.ru/maps"
+                class="footer__link"
+                target="_blank"
+                >Карты</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://yandex.ru/pogoda"
+                class="footer__link"
+                target="_blank"
+                >Погода</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://rasp.yandex.ru"
+                class="footer__link"
+                target="_blank"
+                >Расписание</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://calendar.yandex.ru"
+                class="footer__link"
+                target="_blank"
+                >Календарь</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://travel.yandex.ru"
+                class="footer__link"
+                target="_blank"
+                >Путешествия</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="footer__copyright">© 2020. Иванов Сергей</p>
+      </footer>
     </main>
   </body>
 </html>
