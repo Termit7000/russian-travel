@@ -53,3 +53,25 @@
 @import url(../blocks/footer/__link/footer__link.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 
+.page__photo-grid, .page__places, .page__cover, .page__footer {
+  display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .page {
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page {
+    background-color: blue;
+  }
+}
