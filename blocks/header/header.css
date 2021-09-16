@@ -1,11 +1,11 @@
 .header {
   display: flex;
   justify-content: space-between;
-  max-width: 1184px;
+  align-items: center;
   height: 52px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .header {
     height: 42px;
   }

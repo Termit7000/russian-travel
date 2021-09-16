@@ -1,6 +1,6 @@
 .lead__caption {
   margin: 0;
-  padding-top: 8px;
+  padding: 8px 0 0 0;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -9,14 +9,14 @@
   text-transform: uppercase;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
   .lead__caption {
-    padding-left: 24px;
+    padding-left: calc(24px - 24 / (1024 - 768) * (100vw - 768px));
   }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:768px) {
   .lead__caption {
-    padding-left: 16px;
+    padding-left: calc(16px + (24 - 16) / (768 - 320) * (100vw - 320px));
   }
 }

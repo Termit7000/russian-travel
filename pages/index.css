@@ -1,8 +1,8 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
 
-
 @import url(../blocks/page/page.css);
+@import url(../blocks/page/__list/page__list.css);
 @import url(../blocks/page/__header/page__header.css);
 @import url(../blocks/page/__lead/page__lead.css);
 @import url(../blocks/page/__intro/page__intro.css);
@@ -13,7 +13,6 @@
 
 /*header*/
 @import url(../blocks/header/header.css);
-@import url(../blocks/header/__item/header__item.css);
 @import url(../blocks/header/__logo/header__link_logo.css);
 @import url(../blocks/header/__links/header__links.css);
 @import url(../blocks/header/__link/header__link.css);
@@ -24,6 +23,7 @@
 @import url(../blocks/lead/__subtitle/lead__subtitle.css);
 @import url(../blocks/lead/__caption/lead__caption.css);
 @import url(../blocks/lead/__image/lead__image.css);
+@import url(../blocks/lead/__img-wraper/lead__img-wraper.css);
 
 @import url(../blocks/intro/intro.css);
 @import url(../blocks/intro/__title/intro__title.css);
@@ -52,26 +52,3 @@
 @import url(../blocks/footer/__links/footer__links.css);
 @import url(../blocks/footer/__link/footer__link.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
-
-.page__photo-grid, .page__places, .page__cover, .page__footer {
-  display: none;
-}
-
-
-@media screen and (max-width: 1024px) {
-  .page {
-    background-color: red;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .page {
-    background-color: green;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .page {
-    background-color: blue;
-  }
-}

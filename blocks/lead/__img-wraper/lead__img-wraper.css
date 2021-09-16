@@ -1,0 +1,16 @@
+.lead__img-wraper {
+  margin: 0;
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 1280px) {
+  .lead__img-wraper {
+    margin-top: calc(56px + (64 - 56) / (1280 - 1024) * (100vw - 1024px)) ;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead__img-wraper {
+    margin-top: calc(40px + (56 - 40) / 440 * (100vw - 320px));
+  }
+}

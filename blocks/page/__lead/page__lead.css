@@ -2,9 +2,21 @@
   margin: 56px 148px 0 148px;
 }
 
+@media screen and (max-width: 1280px) {
+  .page__lead {
+    margin-top: calc(48px + 8 * (100% - 1024px) / (1280 - 1024) );
+    --spaceBlock: calc(48px + (148 - 48) * (100% - 1024px) / (1280 - 1024));
+    margin-left: var(--spaceBlock);
+    margin-right: var(--spaceBlock);
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .page__lead {
-    margin: 48px 48px 0 48px;
+    --spaceBlock:  calc(48 * (100% - 768px) / (1024 - 768));
+    margin-top:48px;
+    margin-left: var(--spaceBlock);
+    margin-right: var(--spaceBlock);
   }
 }
 

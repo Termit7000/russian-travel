@@ -8,17 +8,11 @@
   max-width: 640px;
 }
 
-@media screen and (max-width:660px) {
+@media screen and (max-width:760px) {
   .lead__subtitle {
-    font-size: 24px;
-    line-height: 28px;
-  }
-}
-
-@media screen and (max-width:320px) {
-  .lead__subtitle {
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 16px;
+    font-size: calc(16px + (30 - 16) / 440 * (100vw - 320px));
+    line-height: calc(20px + (36 - 20) / 440 * (100vw - 320px));
+    margin-top: calc(16px + (32 - 16) / 440 * (100vw - 320px));
+    max-width: calc(288px + (640 - 288) / 440 * (100vw - 320px));
   }
 }
