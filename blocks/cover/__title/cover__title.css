@@ -11,6 +11,14 @@
   z-index: 2;
 }
 
+@media screen and (max-width: 768px) {
+  .cover__title {
+    padding-bottom: calc(16px + 16 * (100vw - 320px) / (768 - 320));
+    max-width: calc(288px + (560 - 288) * (100vw - 320px) / (768 - 320));
+    font-size: calc(32px + (72 - 32) * (100vw - 320px) / (768 - 320));
+    line-height: calc(35px + (76 - 35) * (100vw - 320px) / (768 - 320));
+  }
+}
 
 @media screen and (max-width: 320px) {
   .cover__title {
