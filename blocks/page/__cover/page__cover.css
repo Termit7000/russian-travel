@@ -3,14 +3,6 @@
   margin-top: 92px;
 }
 
-@media screen and (min-width: 1280px) {
-  .page__cover {
-    margin-left: 48px;
-  }
-}
-
-
-
 @media screen and (max-width: 768px) {
   .page__cover {
     margin-top: calc(66px + (90 - 66) * (100vw - 320px) / (768 - 320));
