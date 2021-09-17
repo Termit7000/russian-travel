@@ -10,4 +10,4 @@
 * html
 * css
 
-[https://github.com/Termit7000/russian-travel.git]
+[https://termit7000.github.io/russian-travel/]
