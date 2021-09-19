@@ -13,5 +13,4 @@
     font-size: calc(40px + 56 / 448 * (100vw - 320px));
     line-height: calc(44px + 52 / 448 * (100vw - 320px)) ;
   }
-
 }

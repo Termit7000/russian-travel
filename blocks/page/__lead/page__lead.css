@@ -2,21 +2,28 @@
   margin: 56px 148px 0 148px;
 }
 
+/*
+Ревьюверу
+переменные убрал во всем коде. спасибо.
+
+на разных разрешениях в фигме используются разные отступы, без использования формулы, которая плавно масштабирует отступы из
+одного состояния в другое, сайт начинает дергаться в контрольных точках. если можно добиться плавности при переходе, не используя
+формулу, буду благодарен за описание такого метода. Спасибо
+*/
+
 @media screen and (max-width: 1280px) {
   .page__lead {
     margin-top: calc(48px + 8 * (100% - 1024px) / (1280 - 1024) );
-    --spaceBlock: calc(48px + (148 - 48) * (100% - 1024px) / (1280 - 1024));
-    margin-left: var(--spaceBlock);
-    margin-right: var(--spaceBlock);
+    margin-left: calc(48px + (148 - 48) * (100vw - 1024px) / (1280 - 1024));;
+    margin-right: calc(48px + (148 - 48) * (100vw - 1024px) / (1280 - 1024));;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .page__lead {
-    --spaceBlock:  calc(48 * (100% - 768px) / (1024 - 768));
     margin-top:48px;
-    margin-left: var(--spaceBlock);
-    margin-right: var(--spaceBlock);
+    margin-left: calc(48 * (100vw - 768px) / (1024 - 768));
+    margin-right: calc(48 * (100vw - 768px) / (1024 - 768));
   }
 }
 
