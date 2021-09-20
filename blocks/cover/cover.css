@@ -1,6 +1,7 @@
 .cover {
   padding: 0;
   background-image: url(../../images/cover-trains.jpg);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1184px;
@@ -22,6 +23,7 @@
 
 .cover:hover::after {
   opacity: .8;
+  transition: opacity .4s;
 }
 
 @media screen and (max-width: 1280px) {
@@ -39,8 +41,6 @@
 
 @media screen and (max-width: 768px) {
   .cover {
-    width: 100%;
     height: calc(200px + (480 - 200) * (100vw - 320px) / (768 - 320));
-
   }
 }

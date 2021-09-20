@@ -19,9 +19,9 @@
 
 @media screen and (max-width: 768px) {
   .page__places {
-    margin-top: calc(64px + (88 - 64) * (100vw - 320px) / (720 - 320));
-    margin-left: calc(24 * (100vw - 320px) / (720 - 320));
-    margin-right: calc(24 * (100vw - 320px) / (720 - 320));
+    margin-top: calc(64px + (88 - 64) * (100vw - 320px) / (768 - 320));
+    margin-left: calc(24 * (100vw - 320px) / (768 - 320));
+    margin-right: calc(24 * (100vw - 320px) / (768 - 320));
   }
 }
 

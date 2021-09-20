@@ -1,33 +1,32 @@
-.places__tite {
+.place__tite {
   padding: 0;
   margin: 0;
   font-weight: 900;
   font-size: 72px;
-  line-height: 76px;
+  line-height: 106%;
   max-width: 460px;
 }
 
 @media screen and (max-width: 1024px) {
-  .places__tite {
+  .place__tite {
     max-width: calc(340px + (440 - 340) * (100vw - 768px) / (1024 - 768));
     font-size: calc(42px + (72 - 42) * (100vw - 768px) / (1024 - 768));
-    line-height: calc(46px + (76 - 46) * (100vw - 768px) / (1024 - 768));
   }
 }
 
 @media screen and (max-width: 768px) {
-  .places__tite {
-    padding-left: 16px;
+  .place__tite {
     max-width: calc(288px + (340 - 288) * (100vw - 320px) / (768 - 320));
     font-size: calc(32px + (42 - 32) * (100vw - 320px) / (768 - 320));
-    line-height: calc(35px + (46 - 32) * (100vw - 320px) / (768 - 320));
+    line-height: 110%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .places__tite {
+  .place__tite {
+    padding-left: 16px;
     max-width: 288px;
     font-size: 32px;
-    line-height: 35px;
+    line-height: 109%;
   }
 }
