@@ -4,8 +4,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
   max-width: 1184px;
-  height: 740px;
+  min-height: 740px;
   position: relative;
 }
 
@@ -28,19 +29,19 @@
 
 @media screen and (max-width: 1280px) {
   .cover {
-    height: calc(640px + (740 - 640) * (100vw - 1024px) / (1280 - 1024));
+    min-height: calc(640px + (740 - 640) * (100vw - 1024px) / (1280 - 1024));
   }
 }
 
 @media screen and (max-width: 1024px) {
   .cover {
-    height: calc(480px + (640 - 480) * (100vw - 768px) / (1024 - 768));
+    min-height: calc(480px + (640 - 480) * (100vw - 768px) / (1024 - 768));
 
   }
 }
 
 @media screen and (max-width: 768px) {
   .cover {
-    height: calc(200px + (480 - 200) * (100vw - 320px) / (768 - 320));
+    min-height: calc(200px + (480 - 200) * (100vw - 320px) / (768 - 320));
   }
 }
