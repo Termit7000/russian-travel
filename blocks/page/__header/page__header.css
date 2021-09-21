@@ -2,17 +2,26 @@
   margin: 28px 48px 0 48px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   .page__header {
-    margin-left: calc(24px + (48 - 24) / (1280 - 768) * (100% - 768px));
-    margin-right: calc(24px + (48 - 24) / (1280 - 768) * (100% - 768px));
+    margin-left: calc(24px + (48 - 24) / (1024 - 768) * (100vw - 768px));
+    margin-right: calc(24px + (48 - 24) / (1024 - 768) * (100vw - 768px));
   }
 }
 
 @media screen and (max-width: 768px) {
   .page__header {
-    margin-top: calc(16px + (28 - 16) / (768 - 320) * (100% - 320px)) ;
-    margin-left: calc(16px + (24 - 16) / (768 - 320) * (100% - 320px)) ;
-    margin-right: calc(16px + (24 - 16) / (768 - 320) * (100% - 320px)) ;
+    margin-top: calc(16px + (28 - 16) / (768 - 320) * (100vw - 320px)) ;
+    margin-left: calc(16px + (24 - 16) / (768 - 320) * (100vw - 320px)) ;
+    margin-right: calc(16px + (24 - 16) / (768 - 320) * (100vw - 320px)) ;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .page__header {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
